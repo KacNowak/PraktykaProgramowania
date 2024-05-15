@@ -20,10 +20,10 @@ jobs :
         pip install -r requirements.txt
     - name : Test with Pytest
       run : |
-        pytest
+        pytest ./PP/test_example.py
     - name : Lint with Pylint
       run : |
-        pylint ./utils.py
+        pylint ./PP/utils.py
     - name : Format with Black
       run : |
         black --check.
